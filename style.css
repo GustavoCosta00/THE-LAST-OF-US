@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+a,ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+p{
+    color: rgb(24, 23, 23);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    background-image: url(img/simbolo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+}   
+
+@media(max-width:600px){
+    .header{
+        background-image: none;
+    }
+        
+}
+
+.logo{
+    width: 220px;
+
+}
+
+.nav{
+    display: flex;
+    
+}
+
+.itens-nav{
+    padding: 0 10px;
+}
+
+.line-header{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(53, 50, 50, 0.904);
+}
+
+.sectionHBO{
+    display: flex;
+    align-items: flex-end;
+    margin: 20px;
+}
+
+.imgwithHBO{
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text{
+    margin-top: 30px;
+}
+
+@media(max-width:1000px){
+    .imgwithHBO{
+        max-width: 400px;
+        height: auto;
+    }
+    
+}
+
+@media(max-width:850px){
+    .sectionHBO{
+        display: block;
+        margin: 20px;
+    }
+
+    .imgCenter{
+        text-align: center;
+    }
+
+    .text{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+}
+
+.jogos{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imgTlou{
+    width:800px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.imgTlouCenter{
+    text-align: center
+}
+
+
+.textTlou2{
+    width: 50%;
+}
+
+.textTlou2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:900px){
+    .imgTlou{
+        
+        margin: 0, 10px;
+        width: 500px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .textTlou2 > p{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+
