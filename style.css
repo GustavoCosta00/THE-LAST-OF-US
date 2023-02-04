@@ -1,146 +1,167 @@
 *{
     padding: 0;
+    border: 0;
     margin: 0;
 }
 
-body{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+    height: 100%;
     width: 100%;
 }
 
-a,ul,li{
+li{
     list-style: none;
-    text-decoration: none;
 }
 
 a{
-    color: black;
+    text-decoration: none;
 }
 
-p{
-    color: rgb(24, 23, 23);
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/background.png);
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    align-items: center;
-    background-image: url(img/simbolo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60px;
-}   
-
-@media(max-width:600px){
-    .header{
-        background-image: none;
-    }
-        
+.overLay{
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.336));
+    width: 100%;
+    height: 100%;
 }
 
 .logo{
-    width: 220px;
-
-}
-
-.nav{
-    display: flex;
-    
-}
-
-.itens-nav{
-    padding: 0 10px;
-}
-
-.line-header{
-    width: 100%;
-    height: 2px;
-    background-color: rgba(53, 50, 50, 0.904);
-}
-
-.sectionHBO{
-    display: flex;
-    align-items: flex-end;
-    margin: 20px;
-}
-
-.imgwithHBO{
-    max-width: 600px;
+    width: 250px;
     height: auto;
-    border-radius: 5px;
+    position: relative;
+    top: 0;
 }
 
-.text{
-    margin-top: 30px;
+.li-flex{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media(max-width:1000px){
-    .imgwithHBO{
-        max-width: 400px;
-        height: auto;
-    }
-    
+.learnMore{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Sofia Sans', sans-serif;
+    padding: 8px;
+    border-radius: 25px;
+    background-color:#fb0404;
+    font-weight:bold;
+    margin-right: 5%;
 }
 
-@media(max-width:850px){
-    .sectionHBO{
-        display: block;
-        margin: 20px;
-    }
-
-    .imgCenter{
-        text-align: center;
-    }
-
-    .text{
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    
+.link{
+    color: white;
 }
 
-.jogos{
-    margin-top: 20px;
+.conteudo-game{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.conteudo-texto{
+    color: white;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.829);
+    font-size: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.capa-game{
     text-align: center;
 }
 
-.imgTlou{
-    width:800px;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-.imgTlouCenter{
-    text-align: center
-}
-
-
-.textTlou2{
-    width: 50%;
-}
-
-.textTlou2 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media(max-width:900px){
-    .imgTlou{
-        
-        margin: 0, 10px;
-        width: 500px;
-        margin-top: 30px;
-        border-radius: 10px;
+    .conteudo-game{
+        display: block;
+        text-align: center;
     }
 
-    .textTlou2 > p{
-        text-align: center;
-        margin-top: 30px;
+    .capa-game{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
     }
+
+    .conteudo-texto{
+        height: 100px;
+        margin: 1rem;
+    }
+
+    .img-resposive{
+        max-width: 40%;
+        min-width: 20%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .capa-game{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(46, 46, 46);
+    }
+    
 }
 
+@media(max-width:550px){
+    .capa-game{
+        display: block;
+    }
 
+    .img-resposive{
+        width: 300px;
+        height: auto;
+    }
+
+    .logoTheLast{
+        width: 250px;
+        height: auto;
+    }
+
+    .conteudo-texto{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .conteudo-game{
+        padding-top: 2rem;
+    }
+    .li-flex{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .learnMore{
+        margin: 0%;
+        width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .capa-game{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(46, 46, 46);
+    }
+
+}
